@@ -1,0 +1,898 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Cafe  </title>
+        <!--=============== css  ===============-->
+        <script src="script.js" defer></script>
+        <script src = "cart.js" defer></script>
+        <link type="text/css" rel="stylesheet" href="style2.css">
+       
+
+
+        <!--=============== favicons ===============-->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+        <!-- <style>
+    .top-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px; /* Ya jo aapki header height hai */
+    padding: 0 50px;
+}
+
+#auth-btn-container {
+    display: flex;
+    align-items: center;
+}
+    
+</style> -->
+    </head>
+    <body>
+       
+        <!--  main   -->
+        
+           
+            <!-- main-header end -->
+            <!-- top-header -->
+           <div class="top-header">
+    <div class="top-header-container">
+        <h2 class="logo">Brew&Bean</h2>
+        
+        <nav class="nav-inner nav-wrap">
+            <ul>
+                <li><a href="#" class="scroll-link">Home</a></li>
+                <li><a href="#sec2" class="scroll-link">About</a></li>
+                <li><a href="#menu-section" class="scroll-link">Menu</a></li>
+                <li><a href="#sec6" class="scroll-link">Contacts</a></li>
+                
+            </ul>
+        </nav>
+
+<div class="cart-component force-left-cart">
+    <div class="cart-btn sc_btn">
+        <strong>Your Cart</strong>
+        <i class="fa-solid fa-bag-shopping"></i>
+       
+    </div>
+</div>
+
+<div id="auth-btn-container" class="force-right-auth"></div>
+
+                 <!-- header-cart_wrap  -->
+                <div class="header-cart_wrap novis_cart">
+                    <div class="close-cart radius_btn close_cart-init">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                   <div class="header-cart_title">
+    Your Cart <span class="cart-count">0 items</span>
+</div>
+                    <div class="header-cart_wrap_container fl-wrap">
+                        <div class="box-widget-content">
+                            <div class="widget-posts fl-wrap">
+                                <ol>
+                                    <!-- <li class="clearfix">
+                                        <a href="product-single.html" class="widget-posts-img">
+                                            <img src="images/h-1-list-icon-img-7.jpg" class="respimg" alt="">
+                                        </a>
+                                        <div class="widget-posts-descr">
+                                            <a href="#" title="">Espresso</a>
+                                            <div class="widget-posts-descr_calc clearfix">
+                                                1 <span>x</span>
+                                                $45
+                                            </div>
+                                        </div>
+                                        <div class="clear-cart_button">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="product-single.html" class="widget-posts-img">
+                                            <img src="images/i1.jpg" class="respimg" alt="">
+                                        </a>
+                                        <div class="widget-posts-descr">
+                                            <a href="#" title="">Iced Latte</a>
+                                            <div class="widget-posts-descr_calc clearfix">
+                                                2 <span>x</span>
+                                                $22
+                                            </div>
+                                        </div>
+                                        <div class="clear-cart_button">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="product-single.html" class="widget-posts-img">
+                                            <img src="images/pop.jpg" class="respimg" alt="">
+                                        </a>
+                                        <div class="widget-posts-descr">
+                                            <a href="#" title="">Jalapeño poppers</a>
+                                            <div class="widget-posts-descr_calc clearfix">
+                                                1 <span>x</span>
+                                                $37
+                                            </div>
+                                        </div>
+                                        <div class="clear-cart_button">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                    </li> -->
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-cart_wrap_total fl-wrap">
+                     <div class="header-cart_wrap_total_item">
+    Subtotal : <span class="cart-subtotal">$0</span>
+</div>
+                    </div>
+                    <div class="header-cart_wrap_footer fl-wrap">
+                        <a href="cart.html" class="ajax">View Cart</a>
+                        <a href="checkout.html" class="ajax">Checkout</a>
+                    </div>
+                </div>
+                <!-- header-cart_wrap end  -->
+</div>
+            </div>
+            <!-- top-header-->
+            <!-- wrapper-->
+            <div class="wrapper">
+                <!-- content-holder-->
+                <div id="content-holder">
+                    <!--  section  -->
+                    <div class="hero-wrap full-height  hidden-section" data-scrollax-parent="true" id="sec1">
+                        <div class="hero-title-container">
+                            <div class="section-title">
+                                <h4>Enjoy your time in our Cafe with pleasure.</h4>
+                                <h2>
+                                    Welcome to The Brew & Bean <br>Premium Cafe
+                                </h2>
+                               
+                               
+                                <a href="#sec2" class="btn btn-g onee custom-scroll-link">Start Explore  </a>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <!-- section end  -->
+                    <!--content-->
+                    <div class="content">
+                        <!--  section  -->
+                        <div class="section" data-scrollax-parent="true" id="sec2">
+                        
+                            <div class="container">
+                                <!--boxed-container-->
+                                <div class="boxed-container">
+                                    <div class="boxed-content-item bi_dec">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="section-title text-align_left statb">
+                                                    <h4>Enjoy your time in our Cafe</h4>
+                                                    <h2>About Our Cafe</h2>
+                                                </div>
+                                                <div class="text-block tb-sin">
+                                                    <p class="has-drop-cap">Qed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.Ut enim ad minima Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. 
+                                                    </p>
+                                                    <p>Fames massa tortor sit nisl sit. Duis nulla tempus quisque et diam condimentum nisl. Rhoncus quisque elementum nulla lorem at turpis vitae quisque. Vulputate duis vel et odio hendrerit magna. Nec lacus dui egestas sit. Vulputate tincidunt viverra viverra etiam porta facilisis.    Fames massa tortor sit nisl sit. Duis nulla tempus quisque et diam condimentum nisl. Rhoncus quisque elementum nulla lorem at turpis vitae quisque. Vulputate duis vel et odio hendrerit magna.   </p>
+                                                    <a href="#menu-section" class="btn  custom-scroll-link fl-btn ">Discover Our Menu <i class="fas fa-mug-hot cafe-menu-icon"></i> </a>
+                                                   
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="col-lg-6">
+                                                <div class="hero-image-collge-wrap">
+                                                    <div class="single-dec_img">
+                                                        <img src="images/freepik__cafe-interior-in-golden-and-bluish-purple-color-bi__58773.png" alt="" class="respimg">
+                                                    </div>
+                                               </div>    
+                                                    
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        
+                        </div>
+                        <!--  section  end-->
+                    <div class="section-container">
+    
+        <!-- This is the dark overlay -->
+        <div class="overlay"></div>
+         <div class="content-wrapper">
+       
+      
+    
+      
+            <!-- Section title and separator -->
+            <div class="section-header">
+                <h4>Our Specials</h4>
+                <h2>Signature Coffee & Drinks</h2>
+                <div class="separator">
+                    <span>
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- This is the container for the new menu items. -->
+            <div class="menu-items-grid">
+
+    <div class="menu-item" data-name="Espresso Martini" data-price="8.50">
+        <div class="item-details">
+            <h4><a href="#">Espresso Martini</a></h4>
+            <span>A rich and invigorating classic.</span>
+            <p>Our unique blend of espresso and vodka, shaken to perfection with a hint of coffee liqueur.</p>
+        </div>
+        <div class="menu-overlay add-to-cart-special">
+            <h4>Add To Cart</h4>
+        </div>
+    </div>
+
+    <div class="menu-item" data-name="Spiced Latte" data-price="5.50">
+        <div class="item-details">
+            <h4><a href="#">Spiced Latte</a></h4>
+            <span>A warm and comforting favorite.</span>
+            <p>A classic latte infused with a delicious blend of cinnamon, nutmeg, and clove.</p>
+        </div>
+        <div class="menu-overlay add-to-cart-special">
+            <h4>Add To Cart</h4>
+        </div>
+    </div>
+
+    <div class="menu-item" data-name="Iced Cold Brew" data-price="4.50">
+        <div class="item-details">
+            <h4><a href="#">Iced Cold Brew</a></h4>
+            <span>Smooth and naturally sweet.</span>
+            <p>Slow-steeped for over 12 hours, bold yet smooth flavor.</p>
+        </div>
+        <div class="menu-overlay add-to-cart-special">
+            <h4>Add To Cart</h4>
+        </div>
+    </div>
+
+    <div class="menu-item" data-name="Caramel Macchiato" data-price="6.00">
+        <div class="item-details">
+            <h4><a href="#">Caramel Macchiato</a></h4>
+            <span>Sweet, milky, and layered.</span>
+            <p>Steamed milk, vanilla syrup, espresso & caramel drizzle.</p>
+        </div>
+        <div class="menu-overlay add-to-cart-special">
+            <h4>Add To Cart</h4>
+        </div>
+    </div>
+
+</div>
+
+            <!-- The button to view all drinks -->
+            <div class="view-all-button">
+                <a href="#menu-section" class="btn btn-g">View All Drinks</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+                        <!-- section end  -->
+                        <!--  section  -->
+                    <div class="section menuu" id="menu-section">
+    <div class="container">
+        <div class="boxed-content-item">
+            <div class="section-title">
+                <h4>Special Menu Offers.</h4>
+                <h2>Discover Our Menu</h2>
+                <div class="section-separator">
+                    <span><i class="fa-solid fa-mug-hot"></i></span>
+                </div>
+            </div>
+
+            <div class="tabs-act">
+                <div class="hero-menu_header">
+                    <ul class="tabs-menu">
+                        <li class="current"><a href="#tab-1">Hot Coffees</a></li>
+                        <li><a href="#tab-2">Cold Coffees</a></li>
+                        <li><a href="#tab-3">Desserts</a></li>
+                        <li><a href="#tab-4">Snacks</a></li>
+                    </ul>
+                </div>
+
+                <div class="hero-menu-wrap anim_tabs">
+                    <div class="tabs-container">
+
+<!-- ================= HOT COFFEES ================= -->
+<div id="tab-1" class="tab-content first-tab">
+
+<div class="hero-menu-item" data-name="Espresso" data-price="3.50" data-img="images/h-1-list-icon-img-7.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">01.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Espresso</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>A single shot of rich, dark, and aromatic coffee.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$3.50</span>
+<a href="#" class="hero-menu-item-img"><img src="images/h-1-list-icon-img-7.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Latte" data-price="5.00" data-img="images/h2.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">02.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Latte</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>Espresso with steamed milk, topped with a thin layer of foam.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$5.00</span>
+<a href="#" class="hero-menu-item-img"><img src="images/h2.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Cappuccino" data-price="5.00" data-img="images/h3.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">03.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Cappuccino</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>Espresso with equal parts steamed milk and frothy foam.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$5.00</span>
+<a href="#" class="hero-menu-item-img"><img src="images/h3.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Mocha" data-price="5.50" data-img="images/mo.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">04.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Mocha</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>A rich mix of espresso, chocolate, and steamed milk.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$5.50</span>
+<a href="#" class="hero-menu-item-img"><img src="images/mo.jpg"></a>
+</div>
+
+</div>
+
+<!-- ================= COLD COFFEES ================= -->
+<div id="tab-2" class="tab-content" style="display:none;">
+
+<div class="hero-menu-item" data-name="Iced Cold Brew" data-price="4.50" data-img="images/i1.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">01.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Iced Cold Brew</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>Slow-steeped coffee for a naturally smooth flavor.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$4.50</span>
+<a href="#" class="hero-menu-item-img"><img src="images/i1.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Iced Latte" data-price="6.00" data-img="images/i2.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">02.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Iced Latte</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>A revitalizing mix of espresso, steamed milk, and ice.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$6.00</span>
+<a href="#" class="hero-menu-item-img"><img src="images/i2.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Iced Americano" data-price="6.00" data-img="images/i3.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">03.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Iced Americano</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>A bold mix of espresso and cold water served over ice.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$6.00</span>
+<a href="#" class="hero-menu-item-img"><img src="images/i3.jpg"></a>
+</div>
+
+</div>
+
+<!-- ================= DESSERTS ================= -->
+<div id="tab-3" class="tab-content" style="display:none;">
+
+<div class="hero-menu-item" data-name="Chocolate Lava Cake" data-price="7.00" data-img="images/lava.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">01.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Chocolate Lava Cake</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>A rich chocolate cake with a gooey molten center.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$7.00</span>
+<a href="#" class="hero-menu-item-img"><img src="images/lava.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Tiramisu" data-price="7.50" data-img="images/tira.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">02.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Tiramisu</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>Our classic tiramisu with layers of coffee-soaked ladyfingers and mascarpone cheese.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$7.50</span>
+<a href="#" class="hero-menu-item-img"><img src="images/tira.jpg"></a>
+</div>
+
+</div>
+
+<!-- ================= SNACKS ================= -->
+<div id="tab-4" class="tab-content" style="display:none;">
+
+<div class="hero-menu-item" data-name="Chocolate Croissant" data-price="4.00" data-img="images/croi.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">01.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Chocolate Croissant</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>A flaky croissant filled with rich chocolate.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$4.00</span>
+<a href="#" class="hero-menu-item-img"><img src="images/croi.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Blueberry Muffin" data-price="3.50" data-img="images/muff.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">02.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Blueberry Muffin</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>Soft and moist muffin with fresh blueberries.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$3.50</span>
+<a href="#" class="hero-menu-item-img"><img src="images/muff.jpg"></a>
+</div>
+
+<div class="hero-menu-item" data-name="Jalapeño Popper Bites" data-price="3.50" data-img="images/pop.jpg">
+<div class="hero-menu-info-wrap">
+<div class="item-number">03.</div>
+<div class="hero-menu-item-title">
+<h6>
+<a href="#">Jalapeño Popper Bites</a>
+<i class="fa-solid fa-plus add-to-cart-trigger" style="color:#d5a353; cursor:pointer; margin-left:10px;"></i>
+</h6>
+<div class="hero-menu-item-details"><p>Spicy jalapeño poppers stuffed with cream cheese.</p></div>
+</div>
+</div>
+<span class="hero-menu-item-price">$3.50</span>
+<a href="#" class="hero-menu-item-img"><img src="images/pop.jpg"></a>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+<a href="#" class="btn btn-g custom-scroll-link">See More</a>
+</div>
+
+</div>
+</div>
+</div>
+
+
+                        <div class="content">
+                        <!--  section  -->
+                        <div class="section" data-scrollax-parent="true" id="sec2">
+                        
+                            <div class="container">
+                                <!--boxed-container-->
+                                <div class="boxed-container">
+                                    <div class="boxed-content-item bi_dec">
+                                        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="section-title text-align_left statb">
+                                                    <h4> <i class="fa-solid fa-mug-hot"></i> WHY CHOOSE US</h4>
+                                                    <h2>Crafting Moments, One Brew at a Time</h2>
+                                                </div>
+                                                <div class="text-block tb-sin">
+                                                    <p class="has-drop-cap">Qed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.Ut enim ad minima Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. 
+                                                    </p>
+                                                   
+                                                </div>
+                                            </div>
+                                           
+                                          
+                                                        <img  class="c-bag" src="images/coffee-bag-1.webp" alt="" >
+                                     
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        
+                        </div>
+                        <!--  section  end-->
+
+
+
+
+
+<div class="section chef" id="chef-section">
+    <!-- <div class="overlay"></div> -->
+    <div class="container">
+        <div class="chef-content-wrapper">
+        <div class="section-title">
+
+            <h4>Meet the Mastermind</h4>
+            <h2 class="w">Our Head Chef</h2>
+          
+        </div>
+
+        <div class="chef-section-wrap">
+            <div class="chef-card">
+                <div class="chef-img-wrap">
+                <img src="images/9ac647a4f43aedac826d8ef65f9af1ef.jpg" alt="Head Chef" class="chef-img">
+              </div>
+                <div class="chef-bio-overlay">
+                    <div class="chef-bio-text">
+                        <h5>Chef John Doe</h5>
+                        <p>Signature Dish:SMoky iced latte
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="chef-details" style="margin-top: 30px;">
+                <p>Our Head Coffee Chef, Chef John Doe, has spent over 15 years perfecting the art of brewing exceptional coffee. With his innovative roasting techniques and passion for flavor, he transforms every cup into a unique experience. His commitment to selecting the finest beans ensures that every sip is a journey into rich, aromatic, and bold coffee craftsmanship.</p>
+            </div>
+            <a href="#" class="btn btn-g">Read Full Bio</a>
+       </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                        <!--  section  -->
+                        <div class="section" id="sec6" data-scrollax-parent="true">
+                            <div class="container">
+                                <div class="section-title">
+                                    <h4>Enjoy your time in our Restaurant with pleasure.</h4>
+                                    <h2>Our Contacts</h2>
+                                    <div class="section-separator">
+                                        
+                                    </div>
+                               
+                               
+                                     <div class="container w-con">
+       
+        <!-- First contact card section -->
+        <div class="boxed-container">
+            <div class="contacts-cards-wrap">
+                <div class="boxed-content-item bi_dec">
+                    <div class="row">
+                        <!-- contacts-card-item -->
+                        <div class="col-lg-4">
+                            <div class="contacts-card-item">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>Our Location</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                                <a href="#">IND 27TH Delhi ND</a>
+                            </div>
+                        </div>
+                        <!-- contacts-card-item end-->
+                        <!-- contacts-card-item -->
+                        <div class="col-lg-4">
+                            <div class="contacts-card-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Our Phone</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                                <a href="#">+9156412322</a>
+                               
+                            </div>
+                        </div>
+                        <!-- contacts-card-item end-->
+                        <!-- contacts-card-item -->
+                        <div class="col-lg-4">
+                            <div class="contacts-card-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Our Mail</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                                <a href="#">yourmail@domain.com</a>
+                            </div>
+                        </div>
+                        <!-- contacts-card-item end-->
+                    </div>
+                
+          
+            
+            <div class="contact-form-and-hours" style="margin-top: 50px;">
+                <div class="row">
+                    <!-- Opening hours on the left -->
+                    <div class="col-lg-5" style="order: 1;">
+                        <div class="single-open-hours">
+                            <!-- This is the transparent overlay -->
+                            <div class="overlay" style="background-color: rgba(50, 48, 63, 0.7);"></div>
+                            <div class="single-open-hours_container">
+                                <div class="single-open-hours-title">
+                                    <h4>Call For Reservations</h4>
+                                    <h2>Opening Hours</h2>
+                                </div>
+                                <div class="work-time fl-wrap">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Sunday to Tuesday</h6>
+                                            <div class="hours">09:00<br>22:00</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Friday to Saturday</h6>
+                                            <div class="hours">11:00<br>19:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" btn btn-g ">
+                        <span>
+                             Book Table <i class="fa-solid fa-wheat-awn"></i>
+                        </span>
+                       
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Contact form on the right -->
+                    <div class="col-lg-7 con" style="order: 2;">
+                        <div class="section-title text-align_left statb" id="form-heading">
+                            <h4>Still Have a questions ?</h4>
+                            <h2>Get in Touch</h2>
+                        </div>
+                        <div class="custom-form">
+                            <div class="contactform-wrap">
+                                <form class="comment-form" action="php/contact.php" name="contactform" id="contactform">
+                                    <fieldset>
+                                        <div id="message"></div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input type="text" name="name" id="name2" placeholder="Your Name *" value="">
+                                            </div>
+                                            <div class="col-sm-6 mail">
+                                                <input type="text" name="email" id="email2" placeholder="Email Address *" value="">
+                                            </div>
+                                        </div>
+                                        <textarea name="comments" id="comments2" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                                        <button class="btn " id="submit_cnt">Send Message </button>
+                                    </fieldset>
+                                </form>
+
+                                <!-- Table Reservation Form (hidden initially) -->
+    <form class="comment-form" id="reservationform" style="display:none;">
+      <fieldset>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" name="rname" id="rname" placeholder="Your Name *">
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" name="rdate" id="rdate" placeholder="Date *" onfocus="this.type='date'">
+          </div>
+          <div class="col-sm-6">
+            <input type="text" name="rtime" id="rtime" placeholder="Time *" onfocus="this.type='time'" class="time">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="number" name="rpeople" id="rpeople" placeholder="No. of People *" min="1">
+          </div>
+        </div>
+        <textarea name="rnotes" id="rnotes" cols="40" rows="3" placeholder="Special Requests (optional)"></textarea>
+      <button type="submit" style="border: none;" class="btn" id="submit_reserve">Reserve Table</button>
+      </fieldset>
+    </form>
+    <div id="toast" class="toast"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+          </div>
+        
+</div>
+        </div>                         <!--boxed-container end-->
+                                
+                        <!--  section  end-->
+                       
+                        <!--  section  -->
+                        <div class="section" id="sec7">
+                            <div class="container">
+                                <!--boxed-container-->
+                                <div class="section-title">
+                                    <h4>Enjoy your time in our Restaurant with pleasure.</h4>
+                                             <div class="section-separator">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                           
+                           
+            
+<div class="body-wrapper">
+   
+    
+    <footer class="main-footer">
+        <div class="container">
+            <!-- footer-widget-wrap -->
+            <div class="footer-widget-wrap">
+                <div class="row">
+                    <!-- footer-widget -->
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">Contact info </div>
+                            <div class="footer-widget-content">
+                                <div class="footer-contacts footer-box">
+                                    <ul>
+                                        <li>
+                                            <span>Call :</span>
+                                            <a href="#">+91756412322</a>, <a href="#">+9197456123</a>
+                                        </li>
+                                        <li>
+                                            <span>Write :</span>
+                                            <a href="#">yourmail@domain.com</a>
+                                        </li>
+                                        <li>
+                                            <span>Find us : </span>
+                                            <a href="#">IND 27TH Delhi ND</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#form-heading" class=" btn btn-g footer-widget-content-link">
+                                    <span>Get in Touch</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-widget end-->
+                    <!-- footer-widget -->
+                    <div class="col-lg-2">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">Helpful links</div>
+                            <div class="footer-widget-content">
+                                <div class="footer-list footer-box ">
+                                    <ul>
+                                        <li><a href="#">Our last News</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="#">Contacts</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-widget end-->
+                    <!-- footer-widget -->
+                    <div class="col-lg-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">Subscribe</div>
+                            <div class="footer-widget-content">
+                                <div class="subcribe-form">
+                                    <p>Subscribe to our newsletter</p>
+                                    <form id="subscribe-form">
+                                        <input class="enteremail" name="email" id="subscribe-email" placeholder="Your Email" spellcheck="false" type="text">
+                                        <button type="submit" id="subscribe-button" class="subscribe-button btn btn-g">Send </button>
+                                        <label for="subscribe-email" class="subscribe-message"></label>
+                                    </form>
+                                    <div id="toast" class="toast">Subscribed successfully 🎉</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-widget end-->
+                </div>
+            </div>
+            <!-- footer-widget-wrap end-->
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">&#169;Brew&Bean 2025 . All rights reserved. </div>
+                <a href="#top" class="to-top">
+                    <span>Back To Top </span>
+                    <i class="fal fa-angle-double-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="auth-modal" class="auth-overlay">
+    <div class="auth-modal-content">
+        <div class="close-auth" id="close-auth">&times;</div>
+        
+        <div class="auth-header">
+            <h2 id="auth-title">Welcome to Brew&Bean</h2>
+            <p id="auth-subtitle">Create an account to start ordering</p>
+        </div>
+
+        <form id="signup-form">
+            <input type="text" id="signup-name" placeholder="Full Name" required>
+            <input type="email" id="signup-email" placeholder="Email Address" required>
+            <input type="password" id="signup-password" placeholder="Create Password" required>
+            <button type="submit" class="btn btn-g">Sign Up</button>
+            <p class="auth-switch">Already have an account? <span id="to-login">Login</span></p>
+        </form>
+
+        <form id="login-form" style="display: none;">
+            <input type="email" id="login-email" placeholder="Email Address" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit" class="btn btn-g">Login</button>
+            <p class="auth-switch">Don't have an account? <span id="to-signup">Sign Up</span></p>
+        </form>
+    </div>
+</div><div id="profile-toggle" style="position:fixed; right:30px; bottom:30px; cursor:pointer; background:#d5a353; padding:15px; border-radius:50%;">
+  
+  <i class="fa-solid fa-user-gear" onclick="openProfile()"></i>
+</div>
+
+
+<div id="profile-sidebar" style="position:fixed; top:0; right:-350px; width:320px; height:100vh; background:#272535; transition:0.4s; padding:20px; z-index:999;">
+
+  <h2 id="sidebarTitle" style="color:#d5a353;"></h2>
+  <p>Welcome, <b id="userDisplay"></b></p>
+<button id="profileBtn">View Profile</button>
+<button onclick="logout()">Logout</button>
+
+</div>
+
+
+<!-- <div id="profile-toggle" class="profile-floating-btn">
+    <i class="fa-solid fa-user"></i>
+</div> -->
+<script src="scripts.js"></script>
+
+    </body>
+</html>

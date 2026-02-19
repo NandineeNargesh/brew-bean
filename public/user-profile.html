@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Profile - Brew & Bean</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#1a1a2e;
+    color:white;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.card{
+    background:#272535;
+    border:2px dashed #d5a353;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#d5a353;
+}
+
+.order{
+    border-bottom:1px solid #444;
+    padding:10px 0;
+}
+
+.order:last-child{
+    border:none;
+}
+
+.btn{
+    background:#d5a353;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="welcomeText">Welcome</h1>
+
+    <div class="card">
+        <h2>User Info</h2>
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    </div>
+
+    <div class="card">
+        <h2>Your Order History</h2>
+        <div id="orderList">
+            Loading orders...
+        </div>
+    </div>
+
+    <button class="btn" onclick="logout()">Logout</button>
+
+</div>
+
+
+<script>
+
+function logout(){
+    localStorage.clear();
+    window.location.href="login.html";
+}
+
+
+// LOAD USER DATA
+function loadUserProfile(){
+
+    const email =
+        localStorage.getItem("loggedInUserEmail") ||
+        localStorage.getItem("userEmail") ||
+        localStorage.getItem("loggedInUser") ||
+        localStorage.getItem("email");
+
+    if(!email){
+        alert("Please login first");
+        window.location.href="/";
+        return;
+    }
+
+    const name = email.split("@")[0];
+
+    document.getElementById("welcomeText").innerText =
+        "Welcome, " + name;
+
+    document.getElementById("userEmail").innerText = email;
+
+    // OPTIONAL: show saved user details if exist
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const currentUser = users.find(u => u.email === email);
+
+    if(currentUser){
+        document.getElementById("userEmail").innerText =
+            currentUser.email;
+    }
+
+    loadOrders(email);
+}
+
+
+
+// FAKE ORDER DATA (replace later with API)
+function loadOrders(email){
+
+    const orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+    const userOrders = orders.filter(o => o.email === email);
+
+    let html="";
+
+    if(userOrders.length === 0){
+        html="No orders yet.";
+    } else {
+        userOrders.forEach(order=>{
+            html += `
+            <div class="order">
+                <p><strong>Item:</strong> ${order.item}</p>
+                <p><strong>Price:</strong> ₹${order.price}</p>
+                <p><strong>Date:</strong> ${order.date}</p>
+            </div>
+            `;
+        });
+    }
+
+    document.getElementById("orderList").innerHTML = html;
+}
+
+loadUserProfile();
+
+</script>
+
+</body>
+</html>

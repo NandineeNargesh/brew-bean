@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Brew & Bean</title>
+    <link type="text/css" rel="stylesheet" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+      body { background: var(--bg-main) !important; color: var(--text-light); margin: 0; padding: 0; }
+        .checkout-section { padding: 120px 0 80px; position: relative; z-index: 10; }
+        
+        /* Styled Form Inputs matching your theme */
+        .comment-form input, .comment-form select {
+            width: 100%; padding: 15px 20px; margin-bottom: 17px;
+            border-radius: 6px; border: 1px solid var(--bg-hover);
+            background: var(--bg-darker); color: var(--text-light);
+            font-size: 1em; outline: none; box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .comment-form input:focus { border-color: var(--accent-gold); }
+
+        .checkout-grid { display: flex; gap: 30px; align-items: flex-start; margin-top: 50px; }
+        .billing-details { flex: 1; text-align: left; }
+        
+        .order-summary-card { 
+            width: 400px; background: var(--bg-card); padding: 30px; 
+            border: 1px dashed var(--accent-gold); border-radius: 4px; 
+            box-sizing: border-box; /* Overflow Fix */
+        }
+        .checkout-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px dashed rgba(255,255,255,0.1); }
+        .final-total-box { background: var(--bg-darker); padding: 20px; margin-top: 25px; border-radius: 4px; text-align: center; }
+        .final-total-box h2 { color: var(--accent-gold); font-size: 36px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="checkout-section">
+        <div class="container">
+            <div class="section-title">
+                <h4>Complete your order</h4>
+                <h2 style="color: var(--text-white);">Checkout Details</h2>
+                <div class="section-separator"><span><i class="fa-solid fa-mug-hot"></i></span></div>
+            </div>
+
+            <div class="checkout-grid">
+                <div class="billing-details">
+                    <div class="boxed-content-item">
+                        <form class="comment-form" id="final-order-form">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-sm-6"><input type="text" placeholder="Full Name *" required></div>
+                                    <div class="col-sm-6"><input type="email" placeholder="Email Address *" required></div>
+                                </div>
+                                <input type="text" placeholder="Phone Number *" required>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <select id="order-type">
+                                            <option value="dine-in">Dine-In</option>
+                                            <option value="takeaway">Takeaway</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6"><input type="text" placeholder="Table Number / Address *"></div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="order-summary-card">
+                    <h3 style="color: var(--accent-gold); margin-bottom: 20px; text-align: center;">Order Summary</h3>
+                    <div id="order-items-list">
+                        </div>
+                    <div class="final-total-box">
+                        <p style="color: var(--text-muted); text-transform: uppercase; font-size: 11px; margin:0;">Grand Total</p>
+                        <h2 id="checkout-total">$0.00</h2>
+                    </div>
+                    <button type="submit" form="final-order-form" class="btn btn-g" style="width: 100%; border: none; margin-top: 20px; line-height: 54px;">Confirm Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="scripts.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
