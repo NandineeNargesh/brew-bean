@@ -1,10 +1,8 @@
 # 🍽️ Cafe Website — Full Stack Project
 
-🌐 **Live Demo (Static Version):**  
-👉 https://nandineenargesh.github.io/cafe-static-page/
 
-⚡ **Full Stack Version live link:**  
-🚧 Coming Soon .
+
+
 
 ---
 
