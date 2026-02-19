@@ -1,128 +1,118 @@
-🍽️ Cafe Website — Full Stack Project
+# 🍽️ Cafe Website — Full Stack Project
 
-🌐 Live Demo: static demo   ( full deployed link coming soon..)
+🌐 **Live Demo (Static Version):**  
 👉 https://nandineenargesh.github.io/cafe-static-page/
 
-📌 About the Project
+⚡ **Full Stack Version live link:**  
+🚧 Coming Soon .
 
-This is a full-stack café/restaurant website designed to provide a real-world online food ordering experience.
+---
 
-The project started as a static UI website and was later enhanced into a complete dynamic system with authentication, cart management, admin dashboard, and order tracking features.
+## 📌 About the Project
+
+This project is a **full-stack café/restaurant website** designed to simulate a real-world online food ordering system.
+
+The project initially started as a static UI website and is now being upgraded into a **complete full-stack application** with dynamic features like login system, cart management, role-based dashboards, and order tracking.
 
 It focuses on:
 
-Modern UI/UX design
+- Modern UI/UX design  
+- Real-world workflow simulation  
+- Role-based functionality (Admin vs User)  
+- Interactive and dynamic JavaScript features  
 
-Real-world user workflows
+---
 
-Role-based functionality (Admin vs User)
+## ✨ Key Features
 
-Interactive and dynamic JavaScript features
+### 🎨 Frontend Features
 
-✨ Key Features
-🎨 Frontend Features
+- Beautiful and modern café UI  
+- Smooth animations and hover effects  
+- Fully responsive layout  
+- Animated and interactive menu section  
+- Clean section-based navigation  
 
-Modern and responsive café UI design
+---
 
-Smooth animations and hover effects
+### 🛒 User Features (Full Stack Version)
 
-Interactive animated menu section
+- User Login / Signup system  
+- Dynamic cart functionality  
+- Add/remove items with quantity control  
+- Order history tracking  
+- Profile sidebar system  
 
-Wishlist-style food interaction
+---
 
-Responsive layout for all devices
+### 👑 Admin Features (Full Stack Version)
 
-🛒 User Features
+- Dedicated admin dashboard  
+- View and manage customer orders  
+- Role-based access control  
+- Separate admin interface  
 
-User authentication (Login / Signup)
+---
 
-Dynamic cart system with real-time updates
+### ⚡ Functional Highlights
 
-Add/remove items with quantity management
+- LocalStorage-based session simulation  
+- Dynamic DOM rendering  
+- Role-based UI switching  
+- Sidebar drawer navigation  
+- Real-time header updates  
 
-Order history tracking
+---
 
-Profile sidebar with role-based view
+## 🛠️ Tech Stack
 
-👑 Admin Features
+### 🎯 Frontend
+- HTML5  
+- CSS3  
+- JavaScript  
 
-Dedicated admin dashboard
+### ⚙️ Backend Logic (Simulation)
+- LocalStorage for data handling  
+- Authentication logic  
+- Dynamic JavaScript rendering  
 
-View and manage all orders
+---
 
-Admin-only access control
+## 📂 Website Sections
 
-Separate interface from user panel
+- Home  
+- About  
+- Menu (Animated)  
+- Reservation Section  
+- Cart System  
+- User Profile Sidebar  
+- Admin Dashboard  
+- Contact  
 
-⚡ Functional Features
+---
 
-LocalStorage-based session management
+## 🚀 Run Locally
 
-Dynamic cart rendering using JavaScript
-
-Role-based UI rendering
-
-Sidebar drawer navigation system
-
-Real-time header updates
-
-🛠️ Tech Stack
-🎯 Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
-⚙️ Backend Logic (Client-Side Simulation)
-
-LocalStorage for database simulation
-
-Role-based authentication logic
-
-Dynamic DOM manipulation
-
-📂 Website Sections
-
-Home
-
-About
-
-Animated Menu
-
-Reservation Section
-
-Cart System
-
-User Profile Sidebar
-
-Admin Dashboard
-
-Contact
-
-🚀 How to Run Locally
-
-Download or clone the repository
-
-Open index.html in your browser
+1. Download or clone the repository  
+2. Open `index.html` in your browser  
 
 No installation required.
 
-🎯 Project Highlights
+---
 
-✔ Real-world full-stack workflow simulation
-✔ Role-based authentication system
-✔ Dynamic cart and order management
-✔ Clean UI with professional design
-✔ Fully responsive layout
+## 🎯 Project Status
 
-📬 Contact
+✅ Static version deployed  
+🚧 Full-stack features under development  
 
-For collaboration or feedback:
+---
 
-📧 Email: nandineenargesh14@gmail.com
+## 📬 Contact
 
-⭐ Support
+📧 **Email:** nandineenargesh14@gmail.com  
 
-If you like this project, don’t forget to star the repository!
+---
+
+## ⭐ Support
+
+If you like this project, please ⭐ star the repository!
