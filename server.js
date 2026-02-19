@@ -9,7 +9,10 @@ const PORT = 3000;
 app.use(express.json()); 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const dbURI = 'mongodb+srv://nandineenargesh14_db_user:nandinee123@cluster0.qdh9c7k.mongodb.net/brewBeanDB?retryWrites=true&w=majority&appName=Cluster0';
+const dbURI = mongoose.mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 
 mongoose.connect(dbURI)
     .then(() => console.log('MongoDB Atlas Connected Successfully! 🎉'))

@@ -391,7 +391,7 @@ function logout() {
 
 function openProfile() {
 
-    // try multiple possible keys (safe fix)
+    
     const userEmail =
         localStorage.getItem("loggedInUserEmail") ||
         localStorage.getItem("userEmail") ||
